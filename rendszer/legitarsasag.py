@@ -1,4 +1,4 @@
-# foglalasi_rendszer/legitarsasag.py
+
 from .jarat import Jarat
 
 

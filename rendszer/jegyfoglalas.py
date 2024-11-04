@@ -1,4 +1,4 @@
-# foglalasi_rendszer/jegyfoglalas.py
+
 from .jarat import Jarat
 
 class JegyFoglalas:

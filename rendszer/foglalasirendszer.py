@@ -1,4 +1,4 @@
-# foglalasi_rendszer/foglalasirendszer.py
+
 from .legitarsasag import LegiTarsasag
 from .jegyfoglalas import JegyFoglalas
 from .jarat import BelfoldiJarat, NemzetkoziJarat
@@ -10,16 +10,15 @@ class FoglalasiRendszer:
         self.elore_feltoltes()
 
     def elore_feltoltes(self):
-        # Járatok előre feltöltése
+
         belfoldi_jarat1 = BelfoldiJarat("BF100", "Budapest", 5000)
         belfoldi_jarat2 = BelfoldiJarat("BF101", "Debrecen", 4000)
-        nemzetkozi_jarat1 = NemzetkoziJarat("NZ200", "Barcelona", 30000)
+        nemzetkozi_jarat1 = NemzetkoziJarat("N200", "Barcelona", 30000)
 
         self.legi_tarsasag.jarat_hozzaadas(belfoldi_jarat1)
         self.legi_tarsasag.jarat_hozzaadas(belfoldi_jarat2)
         self.legi_tarsasag.jarat_hozzaadas(nemzetkozi_jarat1)
 
-        # Foglalások előre feltöltése
         self.foglalasok.append(JegyFoglalas("Kovácsik Anna", belfoldi_jarat1))
         self.foglalasok.append(JegyFoglalas("Bartolák Aliz", nemzetkozi_jarat1))
         self.foglalasok.append(JegyFoglalas("Renkecz Máté", belfoldi_jarat2))
